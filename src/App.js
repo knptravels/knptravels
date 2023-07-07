@@ -13,10 +13,11 @@ import reel2 from './assets/Videos/reel2.mp4'
 import reel3 from './assets/Videos/reel3.mp4'
 import reel4 from './assets/Videos/reel4.mp4'
 
-import girlprofile from './assets/images/girlprofile.png'
+import handlogo from './assets/images/hand.png'
 import image6 from './assets/images/arrow.png'
 import image5 from './assets/images/discount.JPG'
 import boyprofile from './assets/images/profile.jpg'
+import girlprofile from './assets/images/girlprofile.png'
 import image3 from './assets/images/jakob-owens-MctEgCk1Dm0-unsplash.jpg'
 import image2 from './assets/images/roberto-nickson-rEJxpBskj3Q-unsplash.jpg'
 import image1 from './assets/images/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg'
@@ -36,6 +37,7 @@ function App() {
 
     const [popup, setPopup] = useState(false)
     const [model, setModel] = useState(false)
+    const [messagecontainer, setMessagecontainer] = useState(false)
 
     const [contactname, setContactname] = useState('')
     const [contactnumber, setContactnumber] = useState('')
@@ -54,6 +56,11 @@ function App() {
         return () => clearInterval(timer);
     }
 
+    const openmessagecontainer = () => {
+        const timer = setTimeout(() => setMessagecontainer(true), 3000);
+        return () => clearInterval(timer);
+    }
+
     const closePopup = () => {
         setPopup(false)
     }
@@ -68,8 +75,13 @@ function App() {
         setPopup(false)
     }
 
+    const closemessagecontainer = () => {
+        setMessagecontainer(false)
+    }
+
     useEffect(() => {
         openPopup();
+        openmessagecontainer()
     }, [])
 
     useEffect(() => {
@@ -91,7 +103,12 @@ function App() {
     return (
         <>
             <div className="home">
-                <a href='#home' className='home__topbtn typo__heading--1'><FontAwesomeIcon icon={faChevronUp} /></a>
+                {messagecontainer && <div className='home__messagecontainer typo__heading--1'>
+                    <button onClick={closemessagecontainer} className='home__messagecontainer__cross'><FontAwesomeIcon icon={faXmark} /></button>
+                    <h1><img src={handlogo} /> Hi There!</h1>
+                    <p className='typo__color--green'>We are here to help!</p>
+                    <button onClick={openModel} className='home__messagecontainer__query'>Send Your Plan</button>
+                </div>}
                 {popup && <div className='home__popupcontainer'>
                     <div>
                         <img src={image6} />
