@@ -151,7 +151,7 @@ function App() {
                             </ul>
                         </navbar>
                         <div>
-                            <h1 className='typo__display--4 u-m-b-s typo__color--green'>Bore with your daily life?</h1>
+                            <h1 className='typo__display--4 u-m-b-s typo__color--green'>Bored with your daily life?</h1>
                             <p className='typo__heading--5'> "Unleash your inner adventurer and explore the hidden gems of the world with our trusted travel partners."</p>
                         </div>
                     </div>
@@ -234,7 +234,7 @@ function App() {
                                 <img src={boyprofile} />
                                 <div>
                                     <h6>Ashish Chawla</h6>
-                                    <h6>Rajisthan</h6>
+                                    <h6>Rajasthan</h6>
                                 </div>
                             </div>
                         </div>
