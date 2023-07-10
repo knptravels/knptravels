@@ -228,7 +228,7 @@ function App() {
                             </div>
                         </div>
                         <div className='home__reviewsection__review--1'>
-                            <h4>Friendly Nature</h4>
+                            <h4>Friendly Nature of Staff</h4>
                             <p>Hygiene and friendly service were the hallmarks of our experience with the travel agency. Their attention to cleanliness and sanitization, combined with the warm and welcoming nature of their staff, created a memorable and comfortable journey.</p>
                             <div>
                                 <img src={boyprofile} />
