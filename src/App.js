@@ -222,7 +222,7 @@ function App() {
                             <div>
                                 <img src={boyprofile} />
                                 <div>
-                                    <h6>Anuj Shahq</h6>
+                                    <h6>Anuj Shah</h6>
                                     <h6>Uttrakhand</h6>
                                 </div>
                             </div>
