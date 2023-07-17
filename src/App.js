@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from '@formspree/react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faChevronRight, faPhone, faEnvelope, faChevronUp, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faChevronRight, faPhone, faEnvelope, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 import logo from './assets/images/logo.png'
 import video1 from './assets/Videos/man_-_54251 (720p).mp4'
@@ -21,6 +21,7 @@ import girlprofile from './assets/images/girlprofile.png'
 import image3 from './assets/images/jakob-owens-MctEgCk1Dm0-unsplash.jpg'
 import image2 from './assets/images/roberto-nickson-rEJxpBskj3Q-unsplash.jpg'
 import image1 from './assets/images/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg'
+import whatsapp from './assets/images/Whatsapp.png'
 
 import goa from './assets/images/goa.jpg'
 import auli from './assets/images/auli.jpeg'
@@ -102,7 +103,8 @@ function App() {
 
     return (
         <>
-            <div className="home">
+            <div className="home typo">
+                <div className='home__whatsappcontainer'><a href="https://api.whatsapp.com/send?phone=7999973964&text=Hello! I have a query" target='__blank'><img src={whatsapp} /></a></div>
                 {messagecontainer && <div className='home__messagecontainer typo__heading--1'>
                     <button onClick={closemessagecontainer} className='home__messagecontainer__cross'><FontAwesomeIcon icon={faXmark} /></button>
                     <h1><img src={handlogo} /> Hi There!</h1>
