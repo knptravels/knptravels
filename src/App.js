@@ -424,7 +424,7 @@ function App() {
                 </div>
                 <div className='home__copyright u-p-v-m'>
                         <p className='typo__heading--3 u-p-t-s'>© Copyright KnP<span>Travels</span>.  All Rights Reserved</p>
-                        <p className='typo__heading--3 u-p-v-s'>Designed By <a target='_blank' href='https://pranamjain.in'>Pranam</a>.</p>
+                        <p className='typo__heading--3 u-p-v-s'>Designed By <a target='_blank' href='https://pranamjain.com'>Pranam</a>.</p>
                 </div>
             </div>
         </>
